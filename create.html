@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Create Series</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h2>Create a New Series</h2>
+    <button id="logoutBtn">Logout</button>
+  </header>
+
+  <main>
+    <form id="createForm">
+      <label>Poster:</label>
+      <input type="file" id="posterInput" accept="image/*" required>
+
+      <label>Series Title:</label>
+      <input type="text" id="titleInput" required>
+
+      <label>Description:</label>
+      <textarea id="descInput"></textarea>
+
+      <label>AI Prompt:</label>
+      <input type="text" id="promptInput" placeholder="Describe your anime scene..." required>
+
+      <button type="submit">Generate & Save</button>
+    </form>
+
+    <div id="preview"></div>
+  </main>
+
+  <script type="module" src="create.js"></script>
+</body>
+</html>
