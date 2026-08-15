@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Aniflex Hub</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Aniflex Hub</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="create.html">Create</a>
+      <button id="loginBtn">Login with Gmail</button>
+      <button id="logoutBtn" style="display:none;">Logout</button>
+    </nav>
+  </header>
+
+  <!-- Hero Banner -->
+  <section class="hero">
+    <h2>Featured Series</h2>
+    <div id="featured"></div>
+  </section>
+
+  <!-- Series Posters Grid -->
+  <section class="series">
+    <h3>Top Series</h3>
+    <div class="grid" id="seriesGrid"></div>
+  </section>
+
+  <!-- Floating Plus Sign -->
+  <button id="createBtn" class="plus-btn" style="display:none;">+</button>
+
+  <footer>
+    <p>© 2026 Aniflex</p>
+  </footer>
+
+  <script type="module" src="app.js"></script>
+</body>
+</html>
